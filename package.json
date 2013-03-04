@@ -1,0 +1,25 @@
+{
+  "name": "mimic",
+  "version": "0.0.1",
+  "description": "Derive accepted MIME from URI extension",
+  "main": "mimic.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dvv/express-mimic.git"
+  },
+  "keywords": [
+    "MIME",
+    "Rails",
+    "Accept",
+    "Content-Type",
+    "Negotiation"
+  ],
+  "dependencies": {
+    "mime": "*"
+  },
+  "author": "Vladimir Dronnikov <dronnikov@gmail.com>",
+  "license": "MIT"
+}
