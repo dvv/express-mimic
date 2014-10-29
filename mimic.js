@@ -10,8 +10,16 @@ module.exports = function() {
 
   return function(req, res, next) {
     var acceptParameter = req.param('_accept');
+    var contentTypes, allowedTypes = [];
+
     if (acceptParameter) {
-      req.headers.accept = acceptParameter;
+        contentTypes = acceptParameter.split(';');
+        for (var i in contentTypes) {
+            if (Mime.extension(contentTypes[i])) {
+                allowedTypes.push(contentTypes[i]);
+            }
+        }
+        req.headers.accept = allowedTypes.join(';');
     } else {
         var ext = extname(req.path);
         var accept = Mime.lookup(ext);
