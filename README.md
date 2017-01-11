@@ -1,13 +1,17 @@
-## mimic
+## express-mimic
 
 Express middleware layer substituting URI "extension" with equivalent `Accept: ` header.E.g.
 `GET /foo.json` becomes `GET /foo` with `Accept: application/json;q=1` header.
 
 ```js
 ...
-app.use(require('mimic')());
+app.use(require('express-mimic')());
 ...
 ```
+
+## NB
+
+Renamed from original `mimic` to recover namespace.
 
 ## License
 
