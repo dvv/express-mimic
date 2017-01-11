@@ -1,6 +1,6 @@
 {
-  "name": "mimic",
-  "version": "0.0.1",
+  "name": "express-mimic",
+  "version": "999.0.0",
   "description": "Derive accepted MIME from URI extension",
   "main": "mimic.js",
   "scripts": {
